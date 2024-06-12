@@ -9,6 +9,6 @@ import java.util.List;
 @FeignClient(name = "acactionneurs")
 public interface ClientActionneur {
 
-    @GetMapping("/api/actionneurs/{id}")
+    @GetMapping("/api/actionneurs/idUtilisateur/{id}")
     List<Actionneur> findByUserId(@PathVariable("id") Long id);
 }

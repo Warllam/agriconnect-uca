@@ -22,7 +22,7 @@ public class Actionneur implements Serializable {
 
     private Long id;
 
-    private EtatActionneur etat;
+    private String etat;
 
     private double longitude;
 

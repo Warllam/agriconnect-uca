@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
-@FeignClient(name = "acreleves")
+@FeignClient(name = "accapteurs")
 public interface ClientCapteur {
     @GetMapping("/api/capteurs/idUtilisateur/{id}")
     List<Capteur> findByUserId(@PathVariable("id") Long id);

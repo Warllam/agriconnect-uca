@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
-@FeignClient(name = "agriconnect-utilisateur")
+@FeignClient(name = "acutilisateurs")
 public interface ClientUtilisateur {
     @GetMapping("/api/utilisateurs")
     List<Utilisateur> getAllUtilisateurs();
